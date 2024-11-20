@@ -86,7 +86,8 @@
             padding-top: 80px; /* Prevent overlap with header */
         }
 
-        .hero::before {
+        /* Removed the overlay */
+        /* .hero::before {
             content: '';
             position: absolute;
             top: 0;
@@ -96,8 +97,9 @@
             background: linear-gradient(120deg, transparent 0%, rgba(0, 200, 83, 0.2) 50%, transparent 100%);
             transform: skewX(-30deg);
             animation: animate 6s linear infinite;
-        }
+        } */
 
+        /* Optional: Adjust the hero animation if needed */
         @keyframes animate {
             0% {
                 transform: translateX(0) skewX(-30deg);
@@ -314,6 +316,7 @@
     <section id="solutions">
         <h2 class="section-title animated">Our Solutions</h2>
         <div class="features animated">
+            <!-- Feature Items -->
             <div class="feature-item">
                 <h3>Environmental Compliance</h3>
                 <p>Agora helps farms meet stringent environmental regulations by optimizing waste management and reducing emissions, aligning with New Zealand's commitment to sustainable agriculture.</p>
