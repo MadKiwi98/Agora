@@ -4,9 +4,9 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agora - Elevate Your Dairy Farming Experience</title>
+    <title>Agora - Leading the Future of Dairy Farming</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <!-- Styles -->
     <style>
         /* Reset */
@@ -24,7 +24,7 @@
         }
 
         body {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background-color: #0a0a0a;
             color: #e0e0e0;
             line-height: 1.6;
@@ -47,7 +47,7 @@
         .logo {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.8em;
-            color: #007BFF;
+            color: #00c853;
             text-decoration: none;
         }
 
@@ -69,13 +69,13 @@
         }
 
         nav ul li a:hover {
-            color: #007BFF;
+            color: #00c853;
         }
 
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: url('https://via.placeholder.com/1920x1080?text=') no-repeat center center/cover;
+            background: url('https://via.placeholder.com/1920x1080?text=Agora+-+Future+of+Dairy+Farming') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -83,7 +83,7 @@
             text-align: center;
             color: #ffffff;
             overflow: hidden;
-            padding-top: 80px; /* Added padding to prevent overlap */
+            padding-top: 80px; /* Prevent overlap with header */
         }
 
         .hero::before {
@@ -93,7 +93,7 @@
             left: -50%;
             width: 200%;
             height: 100%;
-            background: linear-gradient(120deg, transparent 0%, rgba(0, 123, 255, 0.2) 50%, transparent 100%);
+            background: linear-gradient(120deg, transparent 0%, rgba(0, 200, 83, 0.2) 50%, transparent 100%);
             transform: skewX(-30deg);
             animation: animate 6s linear infinite;
         }
@@ -127,7 +127,7 @@
 
         .hero h1 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 2.8em;
+            font-size: 2.5em;
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -144,7 +144,7 @@
             padding: 15px 40px;
             font-size: 1em;
             color: #ffffff;
-            background-color: #007BFF;
+            background-color: #00c853;
             border: none;
             border-radius: 50px;
             cursor: pointer;
@@ -154,7 +154,7 @@
         }
 
         .hero .cta-button:hover {
-            background-color: #0056b3;
+            background-color: #009624;
             transform: scale(1.05);
         }
 
@@ -168,7 +168,7 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 2.2em;
             margin-bottom: 50px;
-            color: #007BFF;
+            color: #00c853;
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 1s forwards;
@@ -216,7 +216,7 @@
         .feature-item h3 {
             font-size: 1.5em;
             margin-bottom: 20px;
-            color: #007BFF;
+            color: #00c853;
         }
 
         .feature-item p {
@@ -246,7 +246,7 @@
         }
 
         footer a {
-            color: #007BFF;
+            color: #00c853;
             text-decoration: none;
         }
 
@@ -287,7 +287,7 @@
         <nav>
             <ul>
                 <li><a href="#about">Home</a></li>
-                <li><a href="#features">Solutions</a></li>
+                <li><a href="#solutions">Solutions</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -296,56 +296,68 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Elevate Your Dairy Farm</h1>
-            <p>Innovative solutions to boost productivity and profitability in dairy farming.</p>
-            <button class="cta-button" onclick="scrollToSection('#features')">See Our Solutions</button>
+            <h1>Leading the Future of Dairy Farming</h1>
+            <p>Innovative solutions addressing global dairy challenges.</p>
+            <button class="cta-button" onclick="scrollToSection('#solutions')">Discover How</button>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2 class="section-title animated">Welcome to Agora</h2>
+        <h2 class="section-title animated">Empowering Dairy Excellence</h2>
         <div class="section-content animated">
-            <p>Agora is dedicated to transforming dairy farming through innovative technology. Our solutions are designed to enhance efficiency, improve productivity, and increase profitability for your farm.</p>
+            <p>Agora is revolutionizing dairy farming with advanced technologies designed to meet evolving global regulations and sustainability goals. Our solutions enable farms to enhance productivity, ensure compliance, and contribute to a greener future.</p>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features">
+    <!-- Solutions Section -->
+    <section id="solutions">
         <h2 class="section-title animated">Our Solutions</h2>
         <div class="features animated">
             <div class="feature-item">
-                <h3>Automated Systems</h3>
-                <p>Streamline your operations with our state-of-the-art automated systems, reducing labor costs and increasing efficiency.</p>
+                <h3>Environmental Compliance</h3>
+                <p>Agora helps farms meet stringent environmental regulations by optimizing waste management and reducing emissions, aligning with New Zealand's commitment to sustainable agriculture.</p>
             </div>
             <div class="feature-item">
-                <h3>Real-Time Monitoring</h3>
-                <p>Stay informed with real-time data on your farm's performance, helping you make better decisions faster.</p>
+                <h3>Water Efficiency</h3>
+                <p>Addressing global water scarcity concerns, our systems reduce water usage through intelligent irrigation and cleaning technologies, promoting conservation without compromising productivity.</p>
             </div>
             <div class="feature-item">
-                <h3>Expert Support</h3>
-                <p>Our team of experts is here to support you every step of the way, ensuring you get the most out of our solutions.</p>
+                <h3>Data-Driven Decisions</h3>
+                <p>Our real-time monitoring and analytics provide actionable insights, enabling farms to make informed decisions that enhance efficiency and profitability in a competitive market.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Animal Welfare</h3>
+                <p>Agora's solutions improve herd health management, ensuring compliance with animal welfare standards and enhancing milk quality, which is essential for global market access.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Labor Optimization</h3>
+                <p>With automation and smart technologies, farms can optimize labor resources, reduce costs, and address workforce shortages prevalent in the agricultural sector.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Sustainability Goals</h3>
+                <p>Our innovative approaches support farms in achieving sustainability targets, contributing to a positive environmental impact and meeting consumer demand for responsibly produced dairy products.</p>
             </div>
         </div>
     </section>
 
     <!-- Call to Action Section -->
     <section id="call-to-action">
-        <h2 class="section-title animated">Ready to Grow?</h2>
+        <h2 class="section-title animated">Transform Your Dairy Farm</h2>
         <div class="section-content animated">
-            <p>Discover how Agora can help you take your dairy farm to the next level. Contact us today for a personalized consultation.</p>
-            <button class="cta-button" onclick="scrollToSection('#contact')">Get in Touch</button>
+            <p>Agora offers the tools and technologies to navigate the complexities of modern dairy farming. Embrace innovation, ensure compliance, and drive your farm towards a prosperous future.</p>
+            <button class="cta-button" onclick="scrollToSection('#contact')">Get Started</button>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2 class="section-title animated">Contact Us</h2>
+        <h2 class="section-title animated">Connect with Agora</h2>
         <div class="section-content animated">
-            <p>We're excited to work with you. Reach out to us through any of the methods below:</p>
+            <p>Join the movement towards sustainable and efficient dairy farming. Contact us to learn how Agora can elevate your operations.</p>
             <p>Email: <a href="mailto:info@agora.com">info@agora.com</a></p>
             <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-            <p>Address: 1234 Dairy Lane, Farmville, Country</p>
+            <p>Address: 1234 Dairy Innovation Road, Auckland, New Zealand</p>
         </div>
     </section>
 
