@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agora - Revolutionizing Dairy Farming</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <!-- Styles -->
     <style>
         /* Reset */
@@ -16,11 +16,17 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
         body {
             font-family: 'Barlow', sans-serif;
-            background-color: #000;
+            background-color: #0a1128;
             color: #fff;
             overflow-x: hidden;
+            line-height: 1.6;
         }
 
         /* Header */
@@ -28,8 +34,8 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px 50px;
+            background: rgba(10, 17, 40, 0.95);
+            padding: 15px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -52,26 +58,25 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: bold;
             text-transform: uppercase;
             font-size: 0.9em;
             transition: color 0.3s;
         }
 
         nav ul li a:hover {
-            color: #00ff85;
+            color: #39c7a5;
         }
 
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: url('https://via.placeholder.com/1920x1080?text=Futuristic+Dairy+Farm') no-repeat center center/cover;
+            background: url('https://via.placeholder.com/1920x1080?text=Futuristic+Dairy+Innovation') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
             text-align: center;
-            overflow: hidden;
         }
 
         .hero::before {
@@ -81,59 +86,44 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(10, 17, 40, 0.8);
         }
 
         .hero-content {
             position: relative;
             z-index: 1;
             max-width: 800px;
-            color: #fff;
         }
 
         .hero h1 {
-            font-size: 4em;
+            font-size: 3em;
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 3px;
-            animation: fadeIn 2s ease-in-out;
+            color: #fff;
         }
 
         .hero p {
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin-bottom: 40px;
-            line-height: 1.6;
-            animation: fadeIn 3s ease-in-out;
+            color: #d4d4d4;
         }
 
         .hero .cta-button {
             padding: 15px 40px;
             font-size: 1em;
-            color: #000;
-            background-color: #00ff85;
+            color: #fff;
+            background-color: #39c7a5;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-weight: bold;
             text-transform: uppercase;
+            font-weight: bold;
             transition: background-color 0.3s;
-            animation: fadeIn 4s ease-in-out;
         }
 
         .hero .cta-button:hover {
-            background-color: #00cc6e;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            background-color: #2ea284;
         }
 
         /* Sections */
@@ -145,14 +135,13 @@
         .section-title {
             font-size: 2.5em;
             margin-bottom: 50px;
-            color: #00ff85;
-            text-transform: uppercase;
+            color: #39c7a5;
         }
 
         .section-content {
             max-width: 800px;
             margin: 0 auto;
-            font-size: 1.2em;
+            font-size: 1.1em;
             line-height: 1.8;
         }
 
@@ -161,18 +150,17 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            gap: 20px;
         }
 
         .feature-item {
             flex: 1 1 30%;
-            margin: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 40px 20px;
+            background: #13213e;
+            padding: 20px;
             border-radius: 10px;
-            text-align: left;
-            color: #fff;
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #d4d4d4;
+            transition: transform 0.3s ease-in-out;
         }
 
         .feature-item:hover {
@@ -180,9 +168,9 @@
         }
 
         .feature-item h3 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            color: #00ff85;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: #39c7a5;
         }
 
         .feature-item p {
@@ -192,15 +180,15 @@
 
         /* Footer */
         footer {
-            background: #000;
+            background: #0a1128;
             padding: 20px;
             text-align: center;
             font-size: 0.9em;
-            color: #888;
+            color: #aaa;
         }
 
         footer a {
-            color: #00ff85;
+            color: #39c7a5;
             text-decoration: none;
         }
 
@@ -211,7 +199,7 @@
         /* Responsive */
         @media (max-width: 768px) {
             header {
-                padding: 20px 30px;
+                padding: 15px 30px;
             }
 
             .hero h1 {
@@ -220,11 +208,10 @@
 
             .features {
                 flex-direction: column;
-                align-items: center;
             }
 
             .feature-item {
-                flex: 1 1 100%;
+                width: 100%;
             }
         }
     </style>
@@ -233,7 +220,7 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="https://via.placeholder.com/200x50?text=AGORA" alt="Agora Logo">
+            <img src="https://via.placeholder.com/200x50?text=Agora+Logo" alt="Agora Logo">
         </div>
         <nav>
             <ul>
@@ -247,9 +234,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Future of Dairy Automation</h1>
-            <p>Transforming farms with cutting-edge technology and precision dosing systems.</p>
-            <button class="cta-button">Explore Agora</button>
+            <h1>Revolutionizing Dairy Farming</h1>
+            <p>Experience the future of dairy automation with Agora's cutting-edge technology.</p>
+            <button class="cta-button" onclick="scrollToSection('#about')">Learn More</button>
         </div>
     </section>
 
@@ -257,7 +244,7 @@
     <section id="about">
         <h2 class="section-title">About Agora</h2>
         <div class="section-content">
-            <p>Agora revolutionizes dairy farming with real-time monitoring, precision chemical dosing, and seamless automation. Designed for sustainability and profitability, our system ensures optimal hygiene and efficiency.</p>
+            <p>Agora combines precision automation and advanced analytics to optimize dairy farm hygiene and efficiency.</p>
         </div>
     </section>
 
@@ -267,15 +254,15 @@
         <div class="features">
             <div class="feature-item">
                 <h3>Smart Monitoring</h3>
-                <p>Get real-time insights into your farm's chemical levels, temperatures, and system performance.</p>
+                <p>Track chemical levels, temperatures, and performance in real time.</p>
             </div>
             <div class="feature-item">
                 <h3>Precision Dosing</h3>
-                <p>Ensure accurate chemical dosing for hygiene with minimal waste and maximum efficiency.</p>
+                <p>Ensure accurate chemical dosing to maintain optimal hygiene.</p>
             </div>
             <div class="feature-item">
-                <h3>Automation Control</h3>
-                <p>Manage and schedule washes with ease using our intuitive 15.6" tablet interface.</p>
+                <h3>Seamless Automation</h3>
+                <p>Manage and schedule operations effortlessly with advanced interfaces.</p>
             </div>
         </div>
     </section>
@@ -284,7 +271,7 @@
     <section id="contact">
         <h2 class="section-title">Contact Us</h2>
         <div class="section-content">
-            <p>Interested in transforming your dairy farm? Get in touch to learn how Agora can optimize your operations.</p>
+            <p>Ready to transform your dairy farm? Contact us today to learn more about Agora.</p>
         </div>
     </section>
 
@@ -292,5 +279,12 @@
     <footer>
         &copy; 2024 Agora. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
     </footer>
+
+    <!-- Script -->
+    <script>
+        function scrollToSection(id) {
+            document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
