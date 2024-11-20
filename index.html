@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agora - Elevate Your Dairy Farming Experience</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <!-- Styles -->
     <style>
         /* Reset */
@@ -24,7 +24,7 @@
         }
 
         body {
-            font-family: 'Barlow', sans-serif;
+            font-family: 'Nunito', sans-serif;
             background-color: #0a0a0a;
             color: #e0e0e0;
             line-height: 1.6;
@@ -83,6 +83,7 @@
             text-align: center;
             color: #ffffff;
             overflow: hidden;
+            padding-top: 80px; /* Added padding to prevent overlap */
         }
 
         .hero::before {
@@ -111,6 +112,17 @@
             z-index: 1;
             max-width: 90%;
             padding: 0 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+
+        /* Fade-in Up Animation */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero h1 {
@@ -138,11 +150,12 @@
             cursor: pointer;
             text-transform: uppercase;
             font-weight: bold;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .hero .cta-button:hover {
             background-color: #0056b3;
+            transform: scale(1.05);
         }
 
         /* Sections */
@@ -156,6 +169,9 @@
             font-size: 2.2em;
             margin-bottom: 50px;
             color: #007BFF;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
         }
 
         .section-content {
@@ -164,6 +180,10 @@
             font-size: 1.1em;
             line-height: 1.8;
             color: #cccccc;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+            animation-delay: 0.3s;
         }
 
         /* Features Section */
@@ -172,6 +192,10 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+            animation-delay: 0.5s;
         }
 
         .feature-item {
@@ -198,6 +222,18 @@
         .feature-item p {
             font-size: 1em;
             line-height: 1.6;
+        }
+
+        /* Scroll-triggered animations */
+        .animated {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animated.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         /* Footer */
@@ -268,16 +304,16 @@
 
     <!-- About Section -->
     <section id="about">
-        <h2 class="section-title">Welcome to Agora</h2>
-        <div class="section-content">
+        <h2 class="section-title animated">Welcome to Agora</h2>
+        <div class="section-content animated">
             <p>Agora is dedicated to transforming dairy farming through innovative technology. Our solutions are designed to enhance efficiency, improve productivity, and increase profitability for your farm.</p>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features">
-        <h2 class="section-title">Our Solutions</h2>
-        <div class="features">
+        <h2 class="section-title animated">Our Solutions</h2>
+        <div class="features animated">
             <div class="feature-item">
                 <h3>Automated Systems</h3>
                 <p>Streamline your operations with our state-of-the-art automated systems, reducing labor costs and increasing efficiency.</p>
@@ -295,8 +331,8 @@
 
     <!-- Call to Action Section -->
     <section id="call-to-action">
-        <h2 class="section-title">Ready to Grow?</h2>
-        <div class="section-content">
+        <h2 class="section-title animated">Ready to Grow?</h2>
+        <div class="section-content animated">
             <p>Discover how Agora can help you take your dairy farm to the next level. Contact us today for a personalized consultation.</p>
             <button class="cta-button" onclick="scrollToSection('#contact')">Get in Touch</button>
         </div>
@@ -304,8 +340,8 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="section-content">
+        <h2 class="section-title animated">Contact Us</h2>
+        <div class="section-content animated">
             <p>We're excited to work with you. Reach out to us through any of the methods below:</p>
             <p>Email: <a href="mailto:info@agora.com">info@agora.com</a></p>
             <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
@@ -323,6 +359,21 @@
         function scrollToSection(id) {
             document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
         }
+
+        // Scroll-triggered animations
+        const animatedElements = document.querySelectorAll('.animated');
+
+        function animateOnScroll() {
+            animatedElements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
     </script>
 </body>
 </html>
