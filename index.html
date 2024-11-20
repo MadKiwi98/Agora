@@ -4,35 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChemDose Tech</title>
+    <title>Agora - Automation Redefined</title>
     <style>
+        /* Global Styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             color: #ffffff;
             background-color: #000000;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
+        /* Header Styles */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             position: fixed;
             width: 100%;
             z-index: 1000;
         }
 
         .logo {
+            display: flex;
+            align-items: center;
             font-size: 1.5em;
             font-weight: bold;
-            letter-spacing: 2px;
         }
 
-        .logo span {
-            color: #00d1b2;
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
         }
 
         nav ul {
@@ -52,6 +57,7 @@
             color: #00d1b2;
         }
 
+        /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
@@ -67,6 +73,7 @@
             font-size: 3.5em;
             text-transform: uppercase;
             margin: 0;
+            animation: fadeIn 2s ease-in-out;
         }
 
         .hero h1 span {
@@ -76,6 +83,7 @@
         .hero p {
             font-size: 1.2em;
             margin: 20px 0 40px;
+            max-width: 800px;
         }
 
         .hero .cta-button {
@@ -93,6 +101,7 @@
             background-color: #00a393;
         }
 
+        /* Section Styles */
         section {
             padding: 100px 50px;
             text-align: center;
@@ -109,6 +118,26 @@
             font-size: 1.2em;
         }
 
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .feature-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .feature-box h3 {
+            color: #00d1b2;
+        }
+
+        /* Footer Styles */
         footer {
             text-align: center;
             padding: 20px;
@@ -125,50 +154,101 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-        <div class="logo">Chem<span>Dose</span></div>
+        <div class="logo">
+            <img src="agora-logo.png" alt="Agora Logo">
+            <span>Agora</span>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#technology">Technology</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <div class="hero">
-        <h1>Revolutionizing <span>Chemical Automation</span></h1>
-        <p>Precision dosing and real-time data automation solutions for a smarter future.</p>
+        <h1>Welcome to <span>Agora</span></h1>
+        <p>Redefining chemical dosing and automation with precision technology for a smarter future.</p>
         <button class="cta-button">Learn More</button>
     </div>
 
+    <!-- About Section -->
     <section id="about">
-        <h2 class="section-title">About Us</h2>
+        <h2 class="section-title">About Agora</h2>
         <p class="section-content">
-            At ChemDose Tech, we are pioneering chemical dosing and data automation systems designed to optimize efficiency, safety, and environmental sustainability.
+            Agora is at the forefront of chemical automation and data-driven solutions. Our advanced systems enable unparalleled precision, efficiency, and innovation in managing chemical processes.
         </p>
     </section>
 
-    <section id="technology">
-        <h2 class="section-title">Our Technology</h2>
-        <p class="section-content">
-            Our cutting-edge solutions integrate advanced IoT sensors, AI-driven analytics, and intuitive software interfaces to deliver unparalleled performance in chemical process management.
-        </p>
+    <!-- Features Section -->
+    <section id="features">
+        <h2 class="section-title">Our Features</h2>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Precision Dosing</h3>
+                <p>Ensure exact chemical dosing with minimal waste, optimized for maximum efficiency.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Real-Time Monitoring</h3>
+                <p>Stay informed with real-time insights into your processes and operational data.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Futuristic Design</h3>
+                <p>Engineered to align with the most advanced standards and aesthetic values.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2 class="section-title">Get in Touch</h2>
         <p class="section-content">
-            Ready to transform your operations? Contact us today to learn more about our innovative solutions and how we can partner for success.
+            Ready to take your operations to the next level? Contact Agora for cutting-edge automation solutions.
         </p>
     </section>
 
+    <!-- Footer -->
     <footer>
-        &copy; 2024 ChemDose Tech. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        &copy; 2024 Agora. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
     </footer>
 </body>
 
