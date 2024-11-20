@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemDose Tech</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background-color: #000000;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #00d1b2;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00d1b2;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .hero h1 span {
+            color: #00d1b2;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0 40px;
+        }
+
+        .hero .cta-button {
+            padding: 15px 30px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #00d1b2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #00a393;
+        }
+
+        section {
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #00d1b2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Chem<span>Dose</span></div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Revolutionizing <span>Chemical Automation</span></h1>
+        <p>Precision dosing and real-time data automation solutions for a smarter future.</p>
+        <button class="cta-button">Learn More</button>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-content">
+            At ChemDose Tech, we are pioneering chemical dosing and data automation systems designed to optimize efficiency, safety, and environmental sustainability.
+        </p>
+    </section>
+
+    <section id="technology">
+        <h2 class="section-title">Our Technology</h2>
+        <p class="section-content">
+            Our cutting-edge solutions integrate advanced IoT sensors, AI-driven analytics, and intuitive software interfaces to deliver unparalleled performance in chemical process management.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-content">
+            Ready to transform your operations? Contact us today to learn more about our innovative solutions and how we can partner for success.
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2024 ChemDose Tech. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+</body>
+
+</html>
