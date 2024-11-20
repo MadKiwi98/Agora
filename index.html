@@ -4,9 +4,9 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agora - The Future of Dairy Farming</title>
+    <title>Agora - Elevate Your Dairy Farming Experience</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <!-- Styles -->
     <style>
         /* Reset */
@@ -24,8 +24,8 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #1a1a1a;
-            color: #f0f0f0;
+            background-color: #ffffff;
+            color: #333333;
             overflow-x: hidden;
             line-height: 1.6;
         }
@@ -35,13 +35,13 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(26, 26, 26, 0.95);
+            background: rgba(255, 255, 255, 0.95);
             padding: 15px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .logo img {
@@ -58,7 +58,7 @@
         }
 
         nav ul li a {
-            color: #f0f0f0;
+            color: #333333;
             text-decoration: none;
             font-weight: bold;
             font-size: 1em;
@@ -66,20 +66,19 @@
         }
 
         nav ul li a:hover {
-            color: #00adef;
+            color: #007BFF;
         }
 
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: url('https://via.placeholder.com/1920x1080?text=Futuristic+Stainless+Steel+Technology') no-repeat center center/cover;
+            background: url('https://via.placeholder.com/1920x1080?text=Dairy+Farming+Innovation') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
             text-align: center;
-            color: #f0f0f0;
-            overflow: hidden;
+            color: #ffffff;
         }
 
         .hero::before {
@@ -89,7 +88,7 @@
             left: -50%;
             width: 200%;
             height: 100%;
-            background: linear-gradient(120deg, transparent 0%, rgba(0, 173, 239, 0.2) 50%, transparent 100%);
+            background: linear-gradient(120deg, transparent 0%, rgba(0, 123, 255, 0.2) 50%, transparent 100%);
             transform: skewX(-30deg);
             animation: animate 6s linear infinite;
         }
@@ -111,24 +110,25 @@
         }
 
         .hero h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 3.5em;
+            font-family: 'Barlow', sans-serif;
+            font-size: 3em;
             margin-bottom: 20px;
             text-transform: uppercase;
-            letter-spacing: 5px;
+            letter-spacing: 2px;
+            color: #ffffff;
         }
 
         .hero p {
             font-size: 1.2em;
             margin-bottom: 40px;
-            color: #cccccc;
+            color: #f0f0f0;
         }
 
         .hero .cta-button {
             padding: 15px 40px;
             font-size: 1em;
-            color: #1a1a1a;
-            background-color: #00adef;
+            color: #ffffff;
+            background-color: #007BFF;
             border: none;
             border-radius: 50px;
             cursor: pointer;
@@ -138,7 +138,7 @@
         }
 
         .hero .cta-button:hover {
-            background-color: #0086ba;
+            background-color: #0056b3;
         }
 
         /* Sections */
@@ -148,10 +148,10 @@
         }
 
         .section-title {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Barlow', sans-serif;
             font-size: 2.5em;
             margin-bottom: 50px;
-            color: #00adef;
+            color: #007BFF;
         }
 
         .section-content {
@@ -159,7 +159,7 @@
             margin: 0 auto;
             font-size: 1.1em;
             line-height: 1.8;
-            color: #cccccc;
+            color: #555555;
         }
 
         /* Features Section */
@@ -172,23 +172,23 @@
 
         .feature-item {
             flex: 1 1 30%;
-            background: #2a2a2a;
+            background: #f8f9fa;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-            color: #f0f0f0;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            color: #333333;
             transition: transform 0.3s ease-in-out, background 0.3s;
         }
 
         .feature-item:hover {
             transform: translateY(-10px);
-            background: #333333;
+            background: #e9ecef;
         }
 
         .feature-item h3 {
             font-size: 1.6em;
             margin-bottom: 20px;
-            color: #00adef;
+            color: #007BFF;
         }
 
         .feature-item p {
@@ -198,15 +198,15 @@
 
         /* Footer */
         footer {
-            background: #1a1a1a;
+            background: #f8f9fa;
             padding: 20px;
             text-align: center;
             font-size: 0.9em;
-            color: #777;
+            color: #777777;
         }
 
         footer a {
-            color: #00adef;
+            color: #007BFF;
             text-decoration: none;
         }
 
@@ -242,9 +242,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Technology</a></li>
-                <li><a href="#contact">Connect</a></li>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#features">Solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -252,45 +252,56 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>The Future of Dairy Automation</h1>
-            <p>Embrace innovation with Agora's stainless steel solutions, redefining dairy farming.</p>
-            <button class="cta-button" onclick="scrollToSection('#about')">Discover More</button>
+            <h1>Elevate Your Dairy Farm</h1>
+            <p>Innovative solutions to boost productivity and profitability in dairy farming.</p>
+            <button class="cta-button" onclick="scrollToSection('#features')">See Our Solutions</button>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <h2 class="section-title">About Agora</h2>
+        <h2 class="section-title">Welcome to Agora</h2>
         <div class="section-content">
-            <p>At Agora, we blend cutting-edge technology with sleek stainless steel design to optimize dairy farm operations. Our focus is on delivering advanced automation that is as aesthetically pleasing as it is functional.</p>
+            <p>Agora is dedicated to transforming dairy farming through innovative technology. Our solutions are designed to enhance efficiency, improve productivity, and increase profitability for your farm.</p>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features">
-        <h2 class="section-title">Our Technology</h2>
+        <h2 class="section-title">Our Solutions</h2>
         <div class="features">
             <div class="feature-item">
-                <h3>Advanced Analytics</h3>
-                <p>Leverage real-time data to make informed decisions and enhance productivity.</p>
+                <h3>Automated Systems</h3>
+                <p>Streamline your operations with our state-of-the-art automated systems, reducing labor costs and increasing efficiency.</p>
             </div>
             <div class="feature-item">
-                <h3>Stainless Steel Design</h3>
-                <p>Experience durability and style with our premium stainless steel enclosures.</p>
+                <h3>Real-Time Monitoring</h3>
+                <p>Stay informed with real-time data on your farm's performance, helping you make better decisions faster.</p>
             </div>
             <div class="feature-item">
-                <h3>Intuitive Automation</h3>
-                <p>Streamline your operations with user-friendly interfaces and automated processes.</p>
+                <h3>Expert Support</h3>
+                <p>Our team of experts is here to support you every step of the way, ensuring you get the most out of our solutions.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="call-to-action">
+        <h2 class="section-title">Ready to Grow?</h2>
+        <div class="section-content">
+            <p>Discover how Agora can help you take your dairy farm to the next level. Contact us today for a personalized consultation.</p>
+            <button class="cta-button" onclick="scrollToSection('#contact')">Get in Touch</button>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2 class="section-title">Connect with Us</h2>
+        <h2 class="section-title">Contact Us</h2>
         <div class="section-content">
-            <p>Ready to elevate your dairy farm to the future? Get in touch with Agora today.</p>
-            <button class="cta-button" onclick="window.location.href='mailto:contact@agora.com'">Contact Us</button>
+            <p>We're excited to work with you. Reach out to us through any of the methods below:</p>
+            <p>Email: <a href="mailto:info@agora.com">info@agora.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Address: 1234 Dairy Lane, Farmville, Country</p>
         </div>
     </section>
 
