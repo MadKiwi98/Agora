@@ -215,7 +215,7 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="about">
         <div class="hero-bg"></div>
         <div class="hero-content">
             <h1>Leading the Future of Dairy Farming</h1>
@@ -224,11 +224,42 @@
         </div>
     </section>
 
-    <!-- Add more sections here with similar animations and styling -->
+    <section id="solutions">
+        <h2 class="section-title">Our Solutions</h2>
+        <div class="section-content">
+            <p>Explore how Agora transforms dairy farming:</p>
+            <div class="features">
+                <!-- Feature items -->
+                <div class="feature-item">
+                    <h3>Environmental Compliance</h3>
+                    <p>Optimizing waste management and reducing emissions.</p>
+                </div>
+                <!-- More feature items here -->
+            </div>
+            <button class="cta-button" onclick="scrollToSection('#contact')">Get Started</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Connect with Agora</h2>
+        <div class="section-content">
+            <p>Join the revolution in dairy farming:</p>
+            <p>Email: <a href="mailto:info@agora.com">info@agora.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Address: 1234 Dairy Innovation Road, Auckland, New Zealand</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Agora. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
 
     <script>
         function scrollToSection(id) {
-            document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+            const section = document.querySelector(id);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
     </script>
 </body>
